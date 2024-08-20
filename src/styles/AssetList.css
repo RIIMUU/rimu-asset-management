@@ -1,0 +1,138 @@
+/* Mengatur tampilan tabel secara keseluruhan */
+.asset-list-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  border-radius: 8px; /* Membuat sudut tabel sedikit melengkung */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Menambahkan shadow untuk efek depth */
+}
+
+/* Mengatur header tabel */
+.asset-list-table .ant-table-thead > tr > th {
+  background-color: #f0f2f5; /* Latar belakang abu-abu ringan untuk header */
+  color: #595959; /* Warna teks abu-abu gelap */
+  font-weight: 600; /* Teks tebal di header */
+  text-align: center; /* Teks di tengah */
+  padding: 12px 16px; /* Padding yang cukup untuk proporsi */
+  border-bottom: 1px solid #d9d9d9; /* Border bawah untuk memisahkan header */
+}
+
+/* Mengatur body tabel */
+.asset-list-table .ant-table-tbody > tr > td {
+  white-space: nowrap;
+  text-align: center; /* Teks di tengah untuk konsistensi */
+  padding: 12px 16px; /* Padding proporsional */
+  border-bottom: 1px solid #f0f0f0; /* Border halus antar baris */
+  transition: background-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+/* Highlight baris pada hover */
+.asset-list-table .ant-table-tbody > tr:hover > td {
+  background-color: #fafafa; /* Latar belakang ringan saat di-hover */
+}
+
+/* Memperkecil dan merapikan ikon sort di header */
+.asset-list-table .ant-table-column-sorter {
+  font-size: 10px; /* Ukuran ikon sort lebih kecil */
+  color: #8c8c8c; /* Warna abu-abu agar tidak terlalu mencolok */
+}
+
+/* Memperkecil dan merapikan ikon filter */
+.asset-list-table .ant-table-filter-trigger-container .anticon {
+  font-size: 12px; /* Ukuran ikon filter sedikit lebih kecil */
+  color: #8c8c8c; /* Warna abu-abu agar lebih lembut */
+}
+
+/* Mengatur padding dan margin untuk tombol aksi */
+.asset-list-table .ant-btn {
+  padding: 0 8px;
+  margin: 0 4px; /* Memberikan jarak antar tombol */
+}
+
+/* Mengatur ukuran dan tampilan ikon dalam tombol aksi */
+.asset-list-table .ant-btn .anticon {
+  font-size: 16px; /* Ukuran ikon sedikit lebih besar untuk keseimbangan */
+  color: #595959; /* Warna ikon agar serasi dengan teks */
+}
+
+/* Mengatur tampilan tooltip */
+.asset-list-table .ant-tooltip-inner {
+  font-size: 12px; /* Ukuran teks tooltip yang proporsional */
+  color: #fff; /* Warna teks putih */
+  background-color: #595959; /* Latar belakang tooltip agar serasi */
+}
+
+/* Custom scrollbar untuk tabel */
+.asset-list-table::-webkit-scrollbar {
+  height: 8px;
+  background-color: #f0f0f0; /* Warna latar belakang scrollbar */
+}
+
+.asset-list-table::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 4px;
+}
+
+/* Mengatur tampilan input pencarian dalam filter */
+.asset-list-table .ant-input {
+  margin-bottom: 8px;
+  border-radius: 4px; /* Membuat input lebih lembut dengan sudut melengkung */
+}
+
+/* Mengatur tampilan tombol dalam filter */
+.asset-list-table .ant-btn {
+  margin-right: 8px;
+  border-radius: 4px; /* Membuat tombol lebih lembut dengan sudut melengkung */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+.asset-list-table .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.asset-list-table .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+/* Hover effect untuk tombol Delete */
+.asset-list-table .ant-btn-dangerous:hover {
+  background-color: #ff4d4f;
+  border-color: #ff7875;
+}
+
+/* Menambahkan gaya khusus untuk teks yang di-highlight saat pencarian */
+.asset-list-table .highlight-text {
+  background-color: #ffec3d;
+  padding: 0 2px;
+}
+
+/* Gaya untuk tombol clear filter dan clear all */
+.asset-list-table .ant-btn {
+  margin-right: 8px;
+  border-radius: 4px; /* Sudut melengkung */
+}
+
+.asset-list-table .ant-btn:hover {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+/* Tambahkan efek hover pada tombol */
+.asset-list-table .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p, span, a, button {
+  font-weight: 400;
+}

@@ -1,0 +1,199 @@
+/* App.css */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --text-secondary-color: #6c757d;
+  --border-color: #dee2e6;
+  --hover-color: #0056b3;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsif untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .asset-list-table {
+    font-size: 14px;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-asset-button, .reset-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Memastikan semua kolom tabel bisa di-scroll secara horizontal */
+  .asset-list-table .ant-table {
+    overflow-x: auto;
+  }
+
+  .asset-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .asset-form .ant-row {
+    flex-direction: column;
+  }
+
+  .asset-form .ant-col {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+}
+
+/* Desain untuk tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+
+  .asset-list-table {
+    font-size: 16px;
+  }
+
+  .form-buttons {
+    justify-content: space-between;
+  }
+
+  .add-asset-button, .reset-button {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .asset-form .ant-col {
+    width: 50%;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+/* Desain untuk desktop */
+@media (min-width: 1025px) {
+  .container {
+    padding: 30px;
+  }
+
+  .asset-list-table {
+    font-size: 18px;
+  }
+}
+
+/* Animasi fade-in untuk modal */
+.ant-modal {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Transisi halus untuk hover pada button */
+.button-primary:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Gaya untuk Tab yang Lebih Jelas */
+.ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.ant-tabs-tab {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--text-secondary-color); /* Warna teks default */
+}
+
+.ant-tabs-tab:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+.ant-tabs-tab-active {
+  background-color: var(--primary-color); /* Warna background untuk tab aktif */
+  color: white; /* Warna teks untuk tab aktif */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Tambahkan shadow untuk tab aktif */
+}
+
+.ant-tabs-ink-bar {
+  background-color: var(--primary-color);
+}
+
+.site-layout {
+  margin-left: 200px; /* default lebar sidebar */
+  transition: margin-left 0.2s ease;
+}
+
+.site-layout.collapsed {
+  /* Lebar sidebar saat tertutup */
+  margin-left: 50px; 
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-layout:not(.collapsed) {
+  margin-left: 200px; /* Default lebar sidebar saat terbuka */
+  transition: margin-left 0.2s ease;
+}
+
+.content {
+  padding: 24px;
+  min-height: 100vh;
+  background-color: #fff;
+  /* Default margin sesuai lebar sidebar */
+  /* margin-left: 200px;  */
+  transition: margin-left 0.2s ease;
+}
+
+.site-layout .content {
+  padding-left: 16px; /* Mengurangi padding untuk mendekatkan konten ke sidebar */
+  padding-right: 16px;
+}
+
+
+.site-layout.collapsed .content {
+  margin-left: 30px; /* Margin konten saat sidebar tertutup */
+}

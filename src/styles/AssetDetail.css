@@ -1,0 +1,31 @@
+.asset-detail-card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .asset-detail-card p {
+    margin-bottom: 10px;
+  }
+  
+  .asset-detail-card strong {
+    display: inline-block;
+    width: 120px;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  p, span, a, button {
+    font-weight: 400;
+  }
+  
+  
+  

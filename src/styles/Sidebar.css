@@ -1,0 +1,77 @@
+/* Sidebar.css */
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #001529;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 150px; /* Ukuran logo, sesuaikan sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 8px; /* Jarak antara logo dan nama website */
+    transition: width 0.2s ease;
+  }
+
+  .collapsed-logo {
+    width: 80px; /* Ukuran logo saat sidebar tertutup */
+  }
+
+  .website-name {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .app-name {
+    /* margin-left: 16px; */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    justify-content: center;
+  }
+  
+  .sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+  }
+  
+  .avatar {
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .notification-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .sidebar .ant-menu {
+    height: 100%;
+    border-right: 0;
+  }
+  
+  .sidebar-toggle-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

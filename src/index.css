@@ -1,0 +1,25 @@
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+.light-mode .container {
+  background-color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+}
